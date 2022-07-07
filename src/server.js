@@ -10,9 +10,6 @@ const app = express();
 
 app.set('view engine', 'mustache');
 app.set('views', path.join(path.resolve('./src'), 'views'));
-//substitui isso
-//server.set('views', path.join(__dirname, 'views'));
-// por conta do uso do ecmascript es6
 app.engine('mustache', mustache());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
