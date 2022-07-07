@@ -1,5 +1,6 @@
-const home = (req, res) => {
+const Home = (req, res) => {
     res.render('pages/home');
 }
 
-export default home;
+
+export default Home;
