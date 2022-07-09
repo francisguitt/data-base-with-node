@@ -1,5 +1,6 @@
 const Home = (req, res) => {
-    res.render('pages/home');
+
+    res.render('pages/home')
 }
 
 

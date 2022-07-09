@@ -5,7 +5,8 @@ import readController from '../controllers/readController.js';
 import updateController from '../controllers/updateController.js';
 import deleteController from '../controllers/deleteController.js'
 import homeController from '../controllers/homeController.js';
-router.get('/', homeController);
+
+router.get('/hm', homeController);
 router.get('/crt', createController);
 router.get('/rd', readController);
 router.get('/upd', updateController);

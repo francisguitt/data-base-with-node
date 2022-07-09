@@ -6,58 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/v4-font-face.min.css"
+        integrity="sha512-6G7jwBgoDnShmGCEha+LlzpMNWBHhGYZ6QCHfIXlaHoX9X5eunFwUZRYj8WSaooev6DIWqQXZ6syn2yup6kGZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <title></title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand  text-light" href="/">Painel</a>
+            <a class="btn btn-primary" href="/hm" role="button"><strong>Painel/Home</strong></a>
+            <i class="bi bi-house-fill"></i>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Suporte</a>
-                    </li>
+
                     <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle show" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="true">
-                            Ver mais
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="margin-left:10px; padding: 10px;">
+                            <i class="bi bi-pencil-square"></i>
+                            Cadastrar items
                         </button>
-                        <ul class="dropdown-menu show" aria-labelledby="dropdownMenuButton1" data-bs-popper="static">
-                            <li><a class="dropdown-item mt-20" href="/">Inicio</a></li>
-                            <li><a class="dropdown-item" href="/crt">Cadastrar</a></li>
-                            <li><a class="dropdown-item" href="/rd">Listar</a></li>
-                            <li><a class="dropdown-item" href="/upd">Atualizar</a></li>
-                            <li><a class="dropdown-item" href="/del">Apagar</a></li>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item active" href="/crt">Cadastrar items</a></li>
+
+
+                            <li>
 
                         </ul>
                     </div>
 
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="margin-left:10px; padding: 10px;">
+                            <i class="bi bi-stack"></i>
+                            Alterar items
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item active" href="/upd">Alterar items</a></li>
+
+                            <li>
+
+                        </ul>
+                    </div>
+
+
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 10px; padding: 10px;">
+                            <i class="bi bi-front"></i>
+                            Duplicar items
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item active" href="/rd">Listar Items</a></li>
+
+                            <li>
+
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown" aria-expanded="false" style="margin-left: 10px; padding: 10px;">
+                            <i class="bi bi-trash3-fill" style="background-color: red;"></i>
+                            Apagar items
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item active" href="/del">Apagar items</a></li>
+
+                            <li>
+
+                        </ul>
+                    </div>
+
+
+                    <form class="d-flex" role="search" style="margin-left:150px;">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
             </div>
         </div>
     </nav>
-    <footer>
-
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-        crossorigin="anonymous"></script>
 
 
-</body>
-
-</html>
+    <!--<ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1" data-bs-popper="static">
+        <li><a class="dropdown-item mt-20" href="/">Inicio</a></li>
+        <li><a class="dropdown-item" href="/crt">Cadastrar item</a></li>
+        <li><a class="dropdown-item" href="/rd">Listar item</a></li>
+        <li><a class="dropdown-item" href="/upd">Atualizar item</a></li>
+        <li><a class="dropdown-item" href="/del">Apagar item</a></li>
+   </ul>-->

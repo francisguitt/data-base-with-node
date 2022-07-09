@@ -1,2 +1,28 @@
 {{>partials/header}}
-<h2>cadastar</h2>
+<h2>cadastar Items</h2>
+<form class="row g-3">
+    <div class="mb-3"
+        style="display: flex; width: 50%; justify-content: space-evenly; align-items: center; margin-left: 80px;">
+        <label for="exampleFormControlInput1" class="form-label">
+            <strong>Cadastar item</strong>
+        </label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome do produto/Item" />
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-success ">Cadastar</button>
+    </div>
+    <div class="mb-3"
+        style="display: flex; width: 50%; justify-content: center; align-items: center; margin-left: 80px;">
+        <label for="exampleFormControlTextarea1" class="form-label"><strong
+                style="margin-right:15px ;">Descrição</strong></label>
+
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" style="resize: none;"
+            placeholder="Descrição"></textarea>
+    </div>
+
+    <div class="col-auto">
+        <button type="submit" class="btn btn-success ">Cadastrar</button>
+    </div>
+</form>
+
+{{>partials/footer}}

@@ -1,4 +1,6 @@
 const Read = (req, res) => {
+    
+    
     res.render('pages/list');
 }
 
